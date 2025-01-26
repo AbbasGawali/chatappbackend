@@ -45,7 +45,7 @@ export const login = async (req, res) => {
             maxAge: 1 * 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'strict'
 
         }).json({
-            success: true, message: "Registration Success", user: {
+            success: true, message: "Login Success", user: {
                 _id: userMatch._id,
                 userName: userMatch.userName,
                 fullName: userMatch.fullName,
